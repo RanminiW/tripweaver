@@ -3,7 +3,7 @@ import requests
 from mcp.server.fastmcp import FastMCP
 import os
 
-mcp = FastMCP("Flight Service", port=int(os.environ.get("PORT", 8000)))
+mcp = FastMCP("Flight Service", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
 
 FLIGHT_API_BASE = "https://standing-fish-574.convex.site/flights"
 
